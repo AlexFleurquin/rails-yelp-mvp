@@ -1,6 +1,10 @@
 <h1>Liste des restaurants</h1>
-<ul>
+<ul >
   <% @restaurants.each do |restaurant| %>
-    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+    <li class="card" style="width: 18rem;">
+      <div class="m-10">
+        <%= link_to restaurant.name, restaurant_path(restaurant) %>
+      </div>
+    </li>
   <% end %>
 </ul>

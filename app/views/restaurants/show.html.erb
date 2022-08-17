@@ -1,4 +1,7 @@
-<p><strong>Reviews</strong></p>
+<h1><%= @restaurant.name %></h1>
+  <div class="card" style="width: 18rem;">
+    <p>Adress : <%= @restaurant.address %> </p>
+  </div>
 <ul class="list-group">
   <% @restaurant.reviews.each do |review| %>
     <li class="list-group-item">
@@ -10,4 +13,4 @@
     </li>
   <% end %>
 </ul>
-<br>
+<%= link_to "Back to all restaurants", restaurants_path %>
